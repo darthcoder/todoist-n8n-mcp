@@ -1,0 +1,16 @@
+[project]
+name = "todoist-n8n-mcp"
+version = "0.1.0"
+description = "MCP server: create Todoist tasks via n8n webhook"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
